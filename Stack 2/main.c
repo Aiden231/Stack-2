@@ -48,7 +48,7 @@ element pop(StackType* s)
 		fprintf(stderr, "스택 공백 에러\n");
 		return;
 	}
-	else s->data[(s->top--)];
+	else return s->data[(s->top--)];
 }
 
 int main()
